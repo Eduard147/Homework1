@@ -1,0 +1,48 @@
+@media (max-width:767px)
+ {
+    .center {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top__center {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+    .top__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        
+    } 
+    .form_button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 32px;
+    }
+    .game__box {
+        height: auto;
+        grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+        padding-bottom: 128px;
+    }
+    .game__box-img {
+        padding-left: 16px;
+    }
+    }
+    @media (min-width:768px) and (max-width:1274px) 
+    {
+        .center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }

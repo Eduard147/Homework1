@@ -43,13 +43,14 @@ body {
 }
 
 .form_button {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
   background: #9C0332;
   border-radius: 30px;
-  width: 234.06px;
-  height: 48.6px;
+  width: 234px;
+  height: 48px;
   border: 1px solid #9C0332;
   margin-top: 44px;
 }

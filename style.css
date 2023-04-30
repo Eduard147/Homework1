@@ -50,7 +50,7 @@ body {
   background: #9C0332;
   border-radius: 30px;
   width: 234px;
-  height: 48px;
+  height: 48;
   border: 1px solid #9C0332;
   margin-top: 44px;
 }
@@ -94,6 +94,63 @@ body {
   background-size: cover;
 }
 
+.seasons {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: #000915;
+  min-height: 800px;
+}
+.seasons__left {
+  grid-column: span 6;
+  padding-top: 282px;
+}
+.seasons__left__title {
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.seasons__left__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  max-width: 584px;
+}
+.seasons__left__button {
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  border: 1px transparent;
+  margin-bottom: 282px;
+  margin-top: 32px;
+  transition: all 0.3s;
+}
+.seasons__left__button:hover {
+  background: #EB443F;
+}
+.seasons__image {
+  grid-column: span 5;
+  background-image: url(img/seasonsimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 135px;
+  width: 100%;
+}
+
+.seasons__button__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
 @media (max-width: 767px) {
   .center {
     width: 100%;
@@ -131,6 +188,37 @@ body {
   }
   .game__box-img {
     padding-left: 16px;
+  }
+  .seasons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .seasons__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seasons__left__button {
+    margin-bottom: 64px;
+  }
+  .seasons__left__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .seasons__left__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .seasons__image {
+    height: 236px;
+    margin-left: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1274px) {

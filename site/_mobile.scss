@@ -48,6 +48,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
+
+
         &__left {
             display: flex;
             flex-direction: column;
@@ -79,9 +81,40 @@
         &__image {
             height: 236px;
             margin-left: 0;
+            margin-bottom: 136px;
         }
     }
 
+}
+
+.play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: 700;
+        line-height: 39px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 32px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+.gamezone {
+    width: 100%;
+    padding-top: 64px;
+}
+
+.memory {
+    display: block;
 }
 
 

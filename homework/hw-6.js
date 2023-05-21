@@ -80,7 +80,45 @@ const merged = arr1
 console.log(arr1)
 
 //10
+let arrs = [1, 3, 5, 7, 9];
 
+let result = arrs.reduce(function (sum, current, i) {
+
+    return
+
+});
+
+console.log(result);
+
+//11
+function squareArr(...arbitraryNumbers) {
+    return arbitraryNumbers.map(number => number ** 2);
+}
+
+console.log(squareArr(1, 8, 6, 3, 0));
+
+//12
+let getLengthWords = (...words) => {
+    return words.map(word => word.length);
+}
+
+console.log(getLengthWords('массив', '', 'стр', 'Массив - упорядоченный набор элементов', 'д'));
+
+//13
+
+function filterPositive(numbsNum) {
+
+    let i = 0;
+
+    numbsNum.push(-25, 25, 0, -1000, -2)
+
+    if (numbsNum[i] < 0) {
+
+        console.log(filterPositive([-1, 0, 5, -10, 56]));
+
+    }
+
+}
 
 
 

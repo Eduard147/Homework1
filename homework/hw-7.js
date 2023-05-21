@@ -61,8 +61,11 @@ const currentDate = new Date()
 currentDate.toLocaleDateString('ru-RU', { weekday: 'long' })
 console.log(currentDate)
 
-
-
+//9
+let currentDatee = new Date();
+console.log(currentDatee);
+currentDatee.setDate(currentDatee.getDate() + 72);
+console.log(currentDatee)
 //10
 
 let todayDate = new Date();

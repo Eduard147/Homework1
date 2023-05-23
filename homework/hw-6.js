@@ -38,7 +38,7 @@ for (let i = 0; i < 3; i++) {
 console.log(array);
 
 //5
-var arra = [1, 1, 1];
+const arra = [1, 1, 1];
 arra.push(2, 2, 2);
 console.log(arra);
 
@@ -58,25 +58,15 @@ let isPresent = answer.includes(question);
 console.log(isPresent);
 
 //8
-function reverseString(string) {
-
-    let newString = '';
-
-    for (let i = string.length - 1; i >= 0; i--) {
-
-        newString += string[i];
-
-    }
-
-    return newString;
-
+function str 'abcdef'; {
+    return s.split("").reverse().join("");
 }
 
-console.log(reverseString('abcdef'));
+console.log(str);
 
 //9
 const arr1 = [[1, 2, 3,], [4, 5, 6]];
-const merged = arr1
+const flat = arr1
 console.log(arr1)
 
 //10
@@ -110,11 +100,11 @@ function filterPositive(numbsNum) {
 
     let i = 0;
 
-    numbsNum.push(-25, 25, 0, -1000, -2)
+    let result = numbsNum.filter(-25, 25, 0, -1000, -2)
 
     if (numbsNum[i] < 0) {
 
-        console.log(filterPositive([-1, 0, 5, -10, 56]));
+        console.log(result);
 
     }
 

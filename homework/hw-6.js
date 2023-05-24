@@ -58,11 +58,11 @@ let isPresent = answer.includes(question);
 console.log(isPresent);
 
 //8
-function str 'abcdef'; {
-    return s.split("").reverse().join("");
+function reverseString(str) {
+    return str.split("").reverse().join("");
 }
-
-console.log(str);
+const str = 'abcdef';
+console.log(reverseString(str));
 
 //9
 const arr1 = [[1, 2, 3,], [4, 5, 6]];
@@ -72,11 +72,12 @@ console.log(arr1)
 //10
 let arrs = [1, 3, 5, 7, 9];
 
-let result = arrs.reduce(function (sum, current, i) {
+for (let i = 0; i < arrs.length; i++) {
+    console.log(arrs[i]);
+}
 
-    return
 
-});
+
 
 console.log(result);
 
@@ -96,19 +97,11 @@ console.log(getLengthWords('массив', '', 'стр', 'Массив - упо�
 
 //13
 
-function filterPositive(numbsNum) {
+function filterPositive(array);
+const filterPositive = array.filter(function (n) {
+    const filterPositive = n % 3
 
-    let i = 0;
-
-    let result = numbsNum.filter(-25, 25, 0, -1000, -2)
-
-    if (numbsNum[i] < 0) {
-
-        console.log(result);
-
-    }
-
-}
-
-
-
+    return filterPositive === 0
+})
+console.log(filterPositive([-1, 0, 5, -10, 56]));
+console.log(filterPositive([-25, 25, 0, -1000, -2]));

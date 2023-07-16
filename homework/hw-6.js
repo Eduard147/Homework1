@@ -58,11 +58,13 @@ let isPresent = answer.includes(question);
 console.log(isPresent);
 
 //8
-function reverseString(str) {
-    return str.split("").reverse().join("");
-}
-const str = 'abcdef';
-console.log(reverseString(str));
+let a = 'abcdef';
+a = a.split('');
+//console.log(a);
+a = a.reverse();
+//console.log(a);
+a = a.join('');
+console.log(a);
 
 //9
 const arr1 = [[1, 2, 3,], [4, 5, 6]];
@@ -70,10 +72,11 @@ const flat = arr1
 console.log(arr1)
 
 //10
-let arrs = [1, 3, 5, 7, 9];
+let arbitraryNumbers = [1, 3, 5, 7, 9];
 
-for (let i = 0; i < arrs.length; i++) {
-    console.log(arrs[i]);
+for (let i = 0; i < arbitraryNumbers.length - 1; i++) {
+    let resultSum = arbitraryNumbers[i] + arbitraryNumbers[i + 1];
+    console.log(resultSum);
 }
 
 
@@ -97,11 +100,8 @@ console.log(getLengthWords('массив', '', 'стр', 'Массив - упо�
 
 //13
 
-function filterPositive(array);
-const filterPositive = array.filter(function (n) {
-    const filterPositive = n % 3
+let getMinusNumbers = (...arrayNumbers) => {
+    return arrayNumbers.filter((el) => el < 0);
+}
 
-    return filterPositive === 0
-})
-console.log(filterPositive([-1, 0, 5, -10, 56]));
-console.log(filterPositive([-25, 25, 0, -1000, -2]));
+console.log(getMinusNumbers(1, -1, 2, -2, 3, -3));
